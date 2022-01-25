@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>este em DOM</h1>
+    <p>Procurando tag</p>
+    <div id="div1" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+        Botão 1
+    </div>
+    <br>
+    <div id="div2" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+            Botão 2
+    </div>
+    <br>
+    <div id="div3" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+            Botão 3
+    </div>
+    <br>
+    <div id="div4" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+            Botão 4
+    </div>
+    <br>
+    <div id="div5" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+            Botão 5
+    </div>
+    <br>
+    <div id="div6" 
+        onmousedown="Clickdown(this)" onmouseup="Clickup(this)"
+        style="background-color: crimson; width:90px; padding:40px; line-height: 20px;" >
+            Botão 6
+    </div>
+    
+
+    <script>  
+        function Clickdown(elem){
+            /*
+            let n 
+            for (let i = 0; i < document.getElementsByTagName('div').length; i++) {
+            let divi = document.getElementsByTagName('div')[i]
+                
+                    divi.innerHTML = 'click down'
+                    divi.style.background = 'purple'
+                
+                
+            }
+            */
+                elem.innerHTML = 'click down'
+                elem.style.background = 'purple'
+
+                //console.log(elem.id)
+                /*
+                switch (elem.id) {
+                    case div1:
+                        document.style.background = '#351431'
+                        break;
+
+                    case div2:
+                        document.style.background = '#775253'
+                        break;
+
+                    case div3:
+                        document.style.background = '#BCD696'
+                        break;
+
+                    case div4:
+                        document.style.background = '#D1D3C4'
+                        break;
+
+                    case div5:
+                        document.style.background = '#DFE0DC'
+                        break;
+                    
+                    case div6:
+                        document.style.background = '#563342'
+                        break;
+                
+                    default:
+                        break;
+                }
+
+                */
+               if (elem.id == div1) {
+                    document.style.background = 'blue'
+               }else
+                    document.style.background = 'white'
+
+
+        }
+
+        function Clickup(elem){
+            /*
+            for (let i = 0; i < document.getElementsByTagName('div').length; i++) {
+            let divi = document.getElementsByTagName('div')[i]
+
+            divi.innerHTML = 'click up'
+            divi.style.background = 'crimson'
+            }
+            */
+            elem.innerHTML = 'click up'
+            elem.style.background = 'crimson'
+        }
+        
+
+    </script>
+</body>
+</html>

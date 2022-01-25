@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenando cidade</title>
+</head>
+<body>
+    <div id="msg">
+
+    </div>
+    <script>
+        sessionStorage.clear()
+        var usr = prompt('Informe a cidade:')
+        sessionStorage.setItem('cidade', usr)
+        var msg = document.getElementById('msg')
+        msg.innerHTML = `Você informou o usuario <b>${usr}</b>`
+    </script>
+</body>
+</html>

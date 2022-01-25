@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            
+        }
+        h1{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!!</h1>
+    <script>
+       // var nome = window.prompt('digite aqui') //abre caixa de txt
+       // window.alert('Bom dia '+nome+'.' )
+       // var num1 = Number(window.prompt('Digite um numero'))
+        //var num2 = Number(window.prompt('Digite um numero'))
+       // let soma = num1 + num2
+        //window.alert(`Soma de ${num1} e ${num2} é igual a ${soma}`)
+        //document.write(`A soma de <strong>${num1}</strong> e <strong>${num2}</strong> é igual a ${soma}`)
+        
+        var num = window.prompt('Digite aqui o seu salario: ')
+        num.toFixed(2).replace('.',',')
+        document.writeln.num.toLocalString('pt-br',{style: "currency", currency:"BRL"})
+
+    </script>
+</body>
+</html>

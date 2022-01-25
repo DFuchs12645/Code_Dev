@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Condição de multa</h1>
+    <input type="number" name="txtv" id="txtv">
+    <input type="button" value="Consutar velocidade" onclick="Verificar()">
+    <div id='Cond'>
+        
+    </div>
+    <script>
+        function Verificar(){
+            var limite = 60
+            var vel = window.getElementById('vel')
+            var Cond = window.getElementById('Cond')
+            vel = Number(txtv.value)
+            Cond.innerHTML = 'Condição'
+           
+            if (vel >= (limite*1,1)) {
+                Cond.innerText = `Você ultrapassou o limite de velocidade da via, ${limite}, seu veiculo apresenta a velocidade de ${vel} `
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+h1#tp{
+    color: white;
+    text-align: center;
+    font: Arial;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(114, 109, 109);
+}
+img#ice{
+    padding-left: 15px;
+    
+}
+img#icd{
+    padding-left: 65px;
+    
+}
+img#ibe{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+img#ibd{
+    padding-left: 65px;
+    
+}
+footer{
+    color: white;
+    text-align: center;
+    font: Arial;
+}
+p#voltar{
+    text-align: center;
+}
+p#txt{
+    color: white;
+    text-align: center;
+    font: Arial;
+}
+iframe{
+    padding-left: 36%;
+    padding-top: 40px;
+}

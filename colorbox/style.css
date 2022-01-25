@@ -1,0 +1,42 @@
+body{
+    background-color: darkgray;
+}
+h1{
+    text-align: center;
+    font: Arial;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: black;
+}
+
+section.hbox{
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border-color:black ;
+    border-width:2px ;
+    border-style: solid;
+}
+section.lbox{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    border-color:black ;
+    border: width 2px;
+    border-style: solid;
+}
+input.vm{
+    background-color: red;
+    color: white;
+}
+input.vd{
+    background-color: green;
+    color: white;
+}
+input.az{
+    background-color: blue;
+    color: white;
+}
+

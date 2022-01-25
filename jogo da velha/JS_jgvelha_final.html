@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="topo">
+            <h1>Jogo da Velha</h1>
+            <p id="mensagem">Mensagem do jogo (vez/fim)</p>
+        </div>
+        <div class="tabuleiro">
+                <button id="0" class="casa" onclick="jogada(0)"></button>
+                <button id="1" class="casa" onclick="jogada(1)"></button>
+                <button id="2" class="casa" onclick="jogada(2)"></button>
+                <br>
+                <button id="3" class="casa" onclick="jogada(3)"></button>
+                <button id="4" class="casa" onclick="jogada(4)"></button>
+                <button id="5" class="casa" onclick="jogada(5)"></button>
+                <br>
+                <button id="6" class="casa" onclick="jogada(6)"></button>
+                <button id="7" class="casa" onclick="jogada(7)"></button>
+                <button id="8" class="casa" onclick="jogada(8)"></button>
+                <br>
+                <button class="reset"
+                        onclick="reinicia()">Reiniciar</button>                
+        </div>
+    </body>
+</html>

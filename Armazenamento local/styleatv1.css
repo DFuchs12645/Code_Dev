@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#hbox{
+    margin: auto;
+    border: solid 2px;
+    width: 20em;
+}
+section#lbox{
+    padding-left: 1em;
+    padding-top: 0.2em;  
+}
+input#bot{
+    background-color: rgb(201, 199, 199);
+}

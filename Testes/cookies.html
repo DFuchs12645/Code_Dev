@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addcookie()">ADD</button>
+    <button onclick="delcookie()">DEL</button>
+    <button onclick="edtcookie()">EDT</button>
+    <div id="write">
+
+    </div>
+    <script>
+        //console.log(document.cookie.valueOf("user_")
+        
+        document.getElementById('write').innerHTML += document.cookie
+        var listanome = []
+        var listaage = []
+
+        function addcookie(){
+            /*
+            document.cookie = "usuario=maria; expires= 18 Dec 2032 12:00:00 UTC"
+            document.getElementById('write').innerHTML = document.cookie
+            */
+            
+            listanome.push(window.prompt('Nome:'))
+            document.cookie = "name="+listanome;"expires= 18 Dec 2032 12:00:00 UTC"
+            listaage.push(window.prompt('Idade:'))
+            console.log(listaage)
+            document.cookie = "age="+listaage;"expires= 18 Dec 2032 12:00:00 UTC"
+            document.getElementById('write').innerHTML += document.cookie+"<br>"
+        }
+        function delcookie(){
+            document.cookie = "usuario= ; expires= 18 Dec 2000 12:00:00 UTC"
+            document.cookie = "name= ; expires= 18 Dec 2000 12:00:00 UTC"
+            document.cookie = "age= ; expires= 18 Dec 2000 12:00:00 UTC"
+            document.getElementById('write').innerHTML = document.cookie
+        }
+        function edtcookie(){
+            
+             
+            
+            /*
+            var user = window.prompt('Usuario:')
+            document.cookie = "usuario= " + user
+            document.getElementById('write').innerHTML = document.cookie
+            */
+        }
+        console.log
+        
+        
+    </script>
+</body>
+</html>

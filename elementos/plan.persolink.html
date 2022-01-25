@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de links e botões</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(80, 161, 189);
+        }
+        button:hover{
+            background: rgb(148, 148, 148);
+        }
+        a::after{
+            content: ' [link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links personalizados</h1>
+        <ul>
+            <li class="link"><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_black">Curso em video</a></li>
+            <li class="link" target="_black"><a href="https://www.youtube.com/c/CortesdoFlow">Cortes do Flow [OFICIAL]</a></li>
+            <li class="link" target="_black"><a href="https://www.youtube.com/c/recordnews">Record News</a></li>
+        </ul>
+    <h1>Botões personalizados</h1>
+        <button class="botao" >Botão01</button>
+        <button class="botao" >Botão02</button>
+        <button class="botao" >Botão03</button>
+</body>
+</html>

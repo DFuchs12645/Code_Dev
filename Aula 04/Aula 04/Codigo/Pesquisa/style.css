@@ -1,0 +1,93 @@
+body
+{
+    background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=983&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.header-frame
+{
+    background-color: #04040466;
+    padding: 5px;
+}
+
+@keyframes anm_hide {
+    0%   {opacity: 0;}
+    25%  {opacity: 25;}
+    50%  {opacity: 50;}
+    100% {opacity: 100;}
+  }
+
+.header-frame h1
+{
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    margin: 33px 36%;
+    text-shadow: 4px 4px 3px #c64132, 5px 5px 5px #0000ff;
+    animation-name: anm_hide;
+    animation-duration: 5s;
+}
+
+.imagem-header
+{
+    position: fixed;
+    max-width: 200px;
+}
+
+.main-frame
+{
+    background-color: #ffffffe3;
+    width: 80%;
+    margin: 50px 10%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 5px 11px #c64132;
+    border: 1px solid #BFBFBF;
+}
+
+.main-frame h3
+{
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.main-frame h3 button
+{
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+}
+
+.main-frame h3 button:hover
+{   
+    color: #c64132;
+}
+
+.modal
+{
+    animation-name: anm_hide;
+    animation-duration: 5s;
+}
+
+.modal .close
+{
+    background-color: #c64132;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 100%;
+    border: none;
+    width: 26px;
+    height: 26px;
+}
+
+.modal .btn-close
+{
+    background-color: #c64132;
+}
+
+.modal .btn-save
+{
+    background-color: #02960e;
+}

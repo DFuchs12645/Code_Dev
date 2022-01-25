@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Jogo da Velha - fase 4</title>
+        <style>
+            .topo {
+                width: 450; height: 90px; margin:auto; 
+                text-align: center;
+            }
+            .topo img {
+                width: 20px; height: 20px;
+            }
+            .tabuleiro {
+                width: 370px; margin: auto;
+                border: 2px solid black;
+                background-color: lightgray;
+            }
+            .casa {
+                background-color: rgb(152, 176, 206);
+                width: 110px; height: 110px;
+                margin: 5px; border-radius: 10px;
+                text-align: center; vertical-align: middle;
+            }
+            .reset {
+                background-color: blue; color:white;
+                width:115px; margin-left: 125px; margin-bottom: 5px;
+            }
+            button img {
+                width: 70px; height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topo">
+            <h1>Jogo da Velha - F4: Jogada</h1>
+            <p id="mensagem">Mensagem do jogo (vez/fim)</p>
+        </div>
+        <div class="tabuleiro">
+                <button id="0" class="casa" onclick="jogada(0)"></button>
+                <button id="1" class="casa" onclick="jogada(1)"></button>
+                <button id="2" class="casa" onclick="jogada(2)"></button>
+                <br>
+                <button id="3" class="casa" onclick="jogada(3)"></button>
+                <button id="4" class="casa" onclick="jogada(4)"></button>
+                <button id="5" class="casa" onclick="jogada(5)"></button>
+                <br>
+                <button id="6" class="casa" onclick="jogada(6)"></button>
+                <button id="7" class="casa" onclick="jogada(7)"></button>
+                <button id="8" class="casa" onclick="jogada(8)"></button>
+                <br>
+                <button class="reset"
+                    onclick="reinicia()">Reiniciar</button>                
+        </div>
+
+        <script>
+            // --- inicialização das variáveis do jogo ---
+            var jog = "x";     // identificação do jogador  
+            var tab = [8];     // criação do array de tabuleiro (vazio)
+            // primeiro aviso de quem é a vez de jogar
+            document.getElementById('mensagem').innerHTML = 
+                    "É a vez do jogador <img src='"+ jog +".png'>";
+            
+            // --- funcão que processa uma jogada ---
+            // --- (executada quando se aperta um botão)
+            function jogada(bt){
+                // ocupa a casa no array e desenha símbolo do jogador no botão
+                document.getElementById(bt).innerHTML = "<img src='"+ jog +".png'>";
+                tab[bt] = jog;
+
+                // muda o jogador
+                if (jog == "x") { 
+                    jog = "o"; 
+                } else { 
+                    jog = "x"; 
+                }
+                // muda jogador no aviso
+                document.getElementById('mensagem').innerHTML = 
+                    "É a vez do jogador <img src='"+ jog +".png'>";
+            }
+            
+
+            // --- funcão que recarrega a página (reinicia o jogo) ---
+            function reinicia() {
+                window.location.reload();
+            }
+        </script>
+    </body>
+</html>

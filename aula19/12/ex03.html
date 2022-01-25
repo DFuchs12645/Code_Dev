@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3 f</title>
+    <style>
+        .normal{color: black;}
+        .az{color: blue;}
+        .vm{color: red;}
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    
+    <p id="id1" class="normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla sunt vitae possimus saepe asperiores, sit magnam ea consectetur laudantium adipisci expedita neque soluta nesciunt. Tenetur similique ad illo a?
+    </p>
+    <p id="id2" class="normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla sunt vitae possimus saepe asperiores, sit magnam ea consectetur laudantium adipisci expedita neque soluta nesciunt. Tenetur similique ad illo a?
+    </p>
+    <p id="id3" class="normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla sunt vitae possimus saepe asperiores, sit magnam ea consectetur laudantium adipisci expedita neque soluta nesciunt. Tenetur similique ad illo a?
+    </p>
+    <p id="id4" class="normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla sunt vitae possimus saepe asperiores, sit magnam ea consectetur laudantium adipisci expedita neque soluta nesciunt. Tenetur similique ad illo a?
+    </p>
+    <button onclick="mudaPS('az')">Azul</button>
+    <button onclick="mudaPS('vm')">Vermelho</button>
+    
+    
+
+    <script>
+         
+        function mudaPS(clss){
+            var paragrafo = document.getElementsByClassName('normal')
+            var i;
+            while(paragrafo.length>0)
+                paragrafo[0].classList = clss
+        }
+        
+       
+    </script>
+</body>
+</html>

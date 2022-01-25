@@ -1,0 +1,25 @@
+.topo {
+    width: 450; height: 90px; margin:auto; 
+    text-align: center;
+}
+.topo img {
+    width: 20px; height: 20px;
+}
+.tabuleiro {
+    width: 370px; margin: auto;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+.casa {
+    background-color: lightsteelblue;
+    width: 110px; height: 110px;
+    margin: 5px; border-radius: 10px;
+    text-align: center; vertical-align: middle;
+}
+.reset {
+    background-color: blue; color:white;
+    width:115px; margin-left: 125px; margin-bottom: 5px;
+}
+button img {
+    width: 70px; height: 70px;
+}

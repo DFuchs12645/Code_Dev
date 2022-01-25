@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Jogo da Velha - fase 3</title>
+        <style>
+            .topo {
+                width: 450; height: 90px; margin:auto; 
+                text-align: center;
+            }
+            .topo img {
+                width: 20px; height: 20px;
+            }
+            .tabuleiro {
+                width: 370px; margin: auto;
+                border: 2px solid black;
+                background-color: lightgray;
+            }
+            .casa {
+                background-color: rgb(152, 176, 206);
+                width: 110px; height: 110px;
+                margin: 5px; border-radius: 10px;
+                text-align: center; vertical-align: middle;
+            }
+            .reset {
+                background-color: blue; color:white;
+                width:115px; margin-left: 125px; margin-bottom: 5px;
+            }
+            button img {
+                width: 70px; height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topo">
+            <h1>Jogo da Velha - F3: Botão</h1>
+            <p id="mensagem">Mensagem do jogo (vez/fim)</p>
+        </div>
+        <div class="tabuleiro">
+                <button class="casa"><img src="x.png"></button>
+                <button class="casa">Lin 1 Col 2</button>
+                <button class="casa">Lin 1 Col 3</button>
+                <br>
+                <button class="casa">Lin 2 Col 1</button>
+                <button class="casa">Lin 2 Col 2</button>
+                <button class="casa">Lin 2 Col 3</button>
+                <br>
+                <button class="casa">Lin 3 Col 1</button>
+                <button class="casa">Lin 3 Col 2</button>
+                <button class="casa"><img src="o.png"></button>
+                <br>
+                <button class="reset"
+                    onclick="reinicia()">Reiniciar</button>                
+        </div>
+
+        <script>
+            // --- inicialização das variáveis do jogo ---
+            var jog = "x";     // identificação do jogador  
+            var tab = [8];     // criação do array de tabuleiro (vazio)
+            // primeiro aviso de quem é a vez de jogar
+            document.getElementById('mensagem').innerHTML = 
+                    "É a vez do jogador <img src='"+ jog +".png'>";
+
+            // --- funcão que recarrega a página (reinicia o jogo) ---
+            function reinicia() {
+                window.location.reload();
+            }
+        </script>
+    </body>
+</html>

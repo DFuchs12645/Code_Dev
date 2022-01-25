@@ -1,0 +1,43 @@
+body{
+    background-image: url("midias/2.jpg");
+    background-color: darkgray;
+    color: #767567;
+    font-family: Arial;
+}
+section#hbox{
+    
+    background-image: url(midias/nota\ fiscalt2.jpg);
+    background-color: #ffffc8;
+    margin: auto;
+    width: 200px;
+    height: 315px;
+}
+section#lbox{
+    width: 200px;
+    height: 131px;
+    padding-top: 115px;
+}
+p{
+    padding-left: 7.5px;
+}
+div{
+    font-size: small;
+    padding-left: 7.5px;
+}
+h1{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+p#caixadeentrada{
+    font-size: small;
+    size: 150px;
+
+}
+input{
+    background-color: #ffffc8;
+    padding-right: 25px;
+    width: 90px; ;
+    border-style: hidden ;
+    color: #767567;
+}
