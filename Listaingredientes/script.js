@@ -215,7 +215,7 @@ function caling(){
     Mussarela &rarr; ${JSON.stringify(ingredietes.Mussarela)}g<br>
     Noz moscada &rarr; ${JSON.stringify(ingredietes.Noz_moscada)}g<br>
     Óleo &rarr;${JSON.stringify(ingredietes.Oleo)}g<br>
-    Ovo &rarr; ${JSON.stringify((ingredietes.Ovo/54).toFixed(2))}g<br>
+    Ovo &rarr; ${JSON.stringify((ingredietes.Ovo/54).toFixed(2))}unid<br>
     Presunto &rarr; ${JSON.stringify(ingredietes.Presunto)}g<br>
     Queijo parmessão &rarr; ${JSON.stringify(ingredietes.Queijo_parmessao)}g<br>
     Ricota &rarr;${JSON.stringify(ingredietes.Ricota)}g<br>
