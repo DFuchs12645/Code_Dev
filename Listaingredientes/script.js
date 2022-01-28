@@ -3,8 +3,8 @@ function caling(){
 
     var pf = Number(document.getElementById('pf').value)
     var pe = Number(document.getElementById('pe').value)
-    var qpq = Number(document.getElementById('qpq').value)
-    var qab = Number(document.getElementById('qab').value)
+    var pq = Number(document.getElementById('qpq').value)
+    var ab = Number(document.getElementById('qab').value)
     var bl = Number(document.getElementById('bl').value)
     var rc = Number(document.getElementById('rc').value)
     var pi = Number(document.getElementById('pi').value)
@@ -37,8 +37,6 @@ function caling(){
     Margarina = 11g
     oleo = 5g
     Farinha de trigo = 30g
-
-    Molho 10unid--1unid
     ovo = 108g--10,8g                            unid=57g
     creme de leite = 100g--10g
     queijo parmesão = 20g--0,2g
@@ -87,68 +85,123 @@ function caling(){
     açucar 25
     agua 285
     */
-        // Aveia 0,FT 1,FTI 2,oleo 3,sal 4,agua 5
-    var massapastel = [5.34, 10.591, 10.591, 1.905, 0.169, 11.481]
-        // Ricota 0, Cebola 1, Oleo 2, Espinafre 3 
-    var recheioespinafre = [37.38, 2.67, 0.392, 5.785]
-        // Ricota 0, Cebola 1, Oleo 2, frango 3, salsa e cebolinha 4
-    var recheiofrango = [37.38, 2.67, 0.392, 5.34, 0.534]
-        //Ovo 0, Margarina 1, Oleo 2, FT 3, Creme de leite 4, Parmesão 5, leite 6, fermentobolo 7, sal 8, Noz moscada 9
-    var quichemssmlh = [14.8, 11, 5, 30, 10, 0.2, 20, 0.7, 0.3, 0.04]
-        //presunto 0, mussarela 1, ricota 2
-    var qpresunto =[13, 12, 18]
-        //alho poró 0, bacon 1, ricota 2
-    var qalho = [7, 7, 18]
-        //Farinha de trigo 0, Ovo 1, Leite 2, fermento pão 3, açucar 4, gotas de chocolate 5, manteiga 6, oleo 7
-    var roscachocolate = [600, 114, 240, 10, 60, 300, 50, 108]
-        //laranja 0, ovo 1, oleo 2, açucar 3, farinha de trigo 4, fermento bolo 5
-    var bololaranja = [458, 189, 150, 325, 250, 15]
-    //Ovo 0, azeite 1, fermento pão 2, sal 3, farinha de trigo integral 4, aveia 5, farinha de trigo 6, açucar 7, agua 8
-    var paointegral = [57, 27, 10, 9, 286, 27, 70, 25, 285]
-
-    var ingredietes = {
-        //ingrdiente: (onde usa)*(qtd)
-        Acucar:(roscachocolate[4]*rc+bololaranja[3]*bl+paointegral[7]*pi).toFixed(2),
-        Agua: (massapastel[5]*pf+massapastel[5]*pe+paointegral[8]*pi).toFixed(2),
-        Alho_poro:(qalho[0]*qab).toFixed(2),
-        Aveia: (massapastel[0]*pf+massapastel[0]*pe+paointegral[5]*pi).toFixed(2),
-        Azeite:(paointegral[1]*pi).toFixed(2),
-        Bacon:(qalho[1]*qab).toFixed(2),
-        Cebola: (recheiofrango[1]*pf+recheioespinafre[1]*pe).toFixed(2),
-        Creme_de_leite:(quichemssmlh[4]*qpq+quichemssmlh[4]*qpq).toFixed(2),
-        Espinafre: (recheioespinafre[3]*pe).toFixed(2),
-        Farinha_de_Trigo: (massapastel[1]*pf+massapastel[1]*pe+quichemssmlh[3]*qpq+quichemssmlh[3]*qpq+roscachocolate[0]*rc+bololaranja[4]*bl+paointegral[6]*pi).toFixed(2),
-        Farinha_de_Trigo_Integral: (massapastel[2]*pf+massapastel[2]*pe+paointegral[4]*pi).toFixed(2),
-        Fermento_bolo:(quichemssmlh[7]*qpq+quichemssmlh[7]*qpq+bololaranja[5]*bl).toFixed(2),
-        Fermento_pao:(roscachocolate[3]*rc+paointegral[2]*pi).toFixed(2),
-        Frango: (recheiofrango[3]*pf).toFixed(2),
-        Gotas_de_chocolate:(roscachocolate[5]*rc).toFixed(2),
-        Laranja:(bololaranja[0]*bl).toFixed(2),
-        Leite:(quichemssmlh[6]*qpq+quichemssmlh[6]*qpq+roscachocolate[2]*rc).toFixed(2),
-        Manteiga:(roscachocolate[6]*rc),
-        Margarina:(quichemssmlh[1]*qpq+quichemssmlh[1]*qpq).toFixed(2),
-        Mussarela:(qpresunto[1]*qpq).toFixed(2),
-        Noz_moscada:(quichemssmlh[9]*qpq+quichemssmlh[9]*qpq).toFixed(2),
-        Oleo: (massapastel[3]*pf+massapastel[3]*pe+recheiofrango[2]*pf+recheioespinafre[2]*pe+quichemssmlh[2]*qpq+quichemssmlh[2]*qpq+roscachocolate[7]*rc+bololaranja[2]*bl).toFixed(2),
-        Ovo:(quichemssmlh[0]*qpq+quichemssmlh[0]*qpq+roscachocolate[1]*rc+bololaranja[2]*bl+paointegral[0]*pi).toFixed(2),
-        Presunto:(qpresunto[0]*qpq).toFixed(2),
-        Queijo_parmessao:(quichemssmlh[5]*qpq+quichemssmlh[5]*qpq).toFixed(2),
-        Ricota: (recheiofrango[0]*pf+recheioespinafre[0]*pe+qpresunto[2]*qpq+qalho[2]*qab).toFixed(2),
-        Sal: (massapastel[4]*pf+massapastel[4]*pe+quichemssmlh[8]*qpq+quichemssmlh[8]*qpq+paointegral[3]*pi).toFixed(2),
-        Salsa_e_Cebolinha: (recheiofrango[4]*pf).toFixed(2),
+    
+    var mpastel={
+        Aveia:5.34,
+        Farinha_de_Trigo:10.591,
+        Farinha_de_Trigo_Integral:10.591,
+        Oleo:1.905,
+        Sal:0.169,
+        Agua:11.481
     }
+    var respinafre = {
+        Ricota: 37.38,
+        Cebola: 2.67,
+        Oleo: 0.392,
+        Espinafre: 5.785
+    }
+    var rfrango = {
+        Ricota: 37.38,
+        Cebola: 2.67,
+        Oleo: 0.392,
+        Frango:5.34,
+        Cheiro_verde:0.534
+    }
+    var quiche = {
+        Ovo: 14.8,
+        Margarina: 11,
+        Oleo: 5,
+        Farinha_de_Trigo: 30,
+        Creme_de_leite: 10,
+        Queijo_parmessao: 0.2,
+        Leite: 20,
+        Fermento_bolo: 0.7,
+        Sal: 0.3,
+        Noz_moscada: 0.04
+    }
+    var presunto = {
+        Presunto: 13,
+        Mussarela: 12,
+        Ricota: 18
+    }
+    var alhobacon = {
+        Alho_poro: 7,
+        Bacon: 7,
+        Ricota: 18
+    }
+    var roscachocolate = {
+        Farinha_de_Trigo: 600,
+        Ovo: 114,
+        Leite: 240,
+        Fermento_pao: 10,
+        Acucar: 60,
+        Gotas_de_chocolate: 300,
+        Manteiga: 50,
+        Oleo: 108
+    }
+    var bololaranja = {
+        Laranja: 458,
+        Ovo: 189,
+        Oleo: 150,
+        Acucar: 325,
+        Farinha_de_Trigo: 250,
+        Fermento_bolo: 15  
+    }
+    var paointegral = {
+    Ovo: 57,
+    Azeite: 27,
+    Fermento_pao: 10,
+    Sal: 9,
+    Farinha_de_Trigo_Integral: 286,
+    Aveia: 27,
+    Farinha_de_Trigo: 70,
+    Acucar: 25,
+    Agua: 285
+    }
+    
+    var ingredietes = {
+        Acucar:(bololaranja.Acucar*bl+paointegral.Acucar*pi+roscachocolate.Acucar*rc).toFixed(2),
+        Agua: (mpastel.Agua*pf+mpastel.Agua*pe+paointegral.Agua*pi).toFixed(2),
+        Alho_poro:(alhobacon.Alho_poro*ab).toFixed(2),
+        Aveia: (mpastel.Aveia*pe+mpastel.Aveia*pf+paointegral.Aveia*pi).toFixed(2),
+        Azeite:(paointegral.Azeite*pi).toFixed(2),
+        Bacon:(alhobacon.Bacon*ab).toFixed(2),
+        Cebola:(rfrango.Cebola*pf+respinafre.Cebola*pe).toFixed(2),
+        Creme_de_leite:(quiche.Creme_de_leite*ab+quiche.Creme_de_leite*pq).toFixed(2),
+        Espinafre:(respinafre.Espinafre*pe).toFixed(2),
+        Farinha_de_Trigo:(mpastel.Farinha_de_Trigo*pe+mpastel.Farinha_de_Trigo*pf+quiche.Farinha_de_Trigo*ab+quiche.Farinha_de_Trigo*pq+bololaranja.Farinha_de_Trigo*bl+paointegral.Farinha_de_Trigo*pi+roscachocolate.Farinha_de_Trigo*rc).toFixed(2),
+        Farinha_de_Trigo_Integral: (mpastel.Farinha_de_Trigo_Integral*pe+mpastel.Farinha_de_Trigo_Integral*pf+paointegral.Farinha_de_Trigo_Integral*pi).toFixed(2),
+        Fermento_bolo:(quiche.Fermento_bolo*pq+quiche.Fermento_bolo*ab+bololaranja.Fermento_bolo*bl).toFixed(2),
+        Fermento_pao:(roscachocolate.Fermento_pao*rc+paointegral.Fermento_pao*pi).toFixed(2),
+        Frango: (rfrango.Frango*pf).toFixed(2),
+        Gotas_de_chocolate:(roscachocolate.Gotas_de_chocolate*rc).toFixed(2),
+        Laranja:(bololaranja.Laranja*bl).toFixed(2),
+        Leite:(quiche.Leite*pq+quiche.Leite*ab+roscachocolate.Leite*rc).toFixed(2),
+        Manteiga:(roscachocolate.Manteiga*rc),
+        Margarina:(quiche.Margarina*pq+quiche.Margarina*ab).toFixed(2),
+        Mussarela:(presunto.Mussarela*pq).toFixed(2),
+        Noz_moscada:(quiche.Noz_moscada*pq+quiche.Noz_moscada*ab).toFixed(2),
+        Oleo: (mpastel.Oleo*pe+respinafre.Oleo*pe+mpastel.Oleo*pf+rfrango.Oleo*pf+quiche.Oleo*pq+quiche.Oleo*ab+bololaranja.Oleo*bl+roscachocolate.Oleo*rc).toFixed(2),
+        Ovo:(quiche.Ovo*pq+quiche.Ovo*ab+bololaranja.Ovo*bl+roscachocolate.Ovo*rc+paointegral.Ovo*pi).toFixed(2),
+        Presunto:(presunto.Presunto*pq).toFixed(2),
+        Queijo_parmessao:(quiche.Queijo_parmessao*pq+quiche.Queijo_parmessao*ab).toFixed(2),
+        Ricota: (rfrango.Ricota*pf+respinafre.Ricota*pe+presunto.Ricota*pq+alhobacon.Ricota*ab).toFixed(2),
+        Sal: (mpastel.Sal*pe+mpastel.Sal*pf+quiche.Sal*pq+quiche.Sal*ab+paointegral.Sal*pi).toFixed(2),
+        Salsa_e_Cebolinha: (rfrango.Cheiro_verde*pf).toFixed(2),
+    }
+    console.log
     //&rarr; ${}g<br>
     lista.innerHTML = 
     `
     Açucar &rarr; ${JSON.stringify(ingredietes.Acucar)}g<br>
     Agua &rarr;${JSON.stringify(ingredietes.Agua)}g<br>
-    Alho Poró &rarr; ${JSON.stringify((ingredietes.Alho_poro*1,33).toFixed(2))}g<br>
+    Alho Poró &rarr; ${JSON.stringify((ingredietes.Alho_poro*1.33).toFixed(2))}g<br>
     Aveia &rarr;${JSON.stringify(ingredietes.Aveia)}g<br>
     Azeite &rarr;${JSON.stringify(ingredietes.Azeite)}g<br>
     Bacon &rarr; ${JSON.stringify((ingredietes.Bacon*1.33).toFixed(2))}g<br>
     Cebola &rarr;${JSON.stringify(ingredietes.Cebola)}g<br>
     Creme de leite &rarr; ${JSON.stringify(ingredietes.Creme_de_leite)}g<br>
-    Espinafre &rarr;${JSON.stringify(ingredietes.Espinafre*1.26)}g<br>
+    Espinafre &rarr;${JSON.stringify((ingredietes.Espinafre*1.26).toFixed(2))}g<br>
     Farinha de Trigo &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo)}g<br>
     Farinha de Trigo Integral &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo_Integral)}g<br>
     Fermento de bolo &rarr; ${JSON.stringify(ingredietes.Fermento_bolo)}g<br>
