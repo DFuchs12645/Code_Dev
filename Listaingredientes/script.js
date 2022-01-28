@@ -189,39 +189,102 @@ function caling(){
         Sal: (mpastel.Sal*pe+mpastel.Sal*pf+quiche.Sal*pq+quiche.Sal*ab+paointegral.Sal*pi).toFixed(2),
         Salsa_e_Cebolinha: (rfrango.Cheiro_verde*pf).toFixed(2),
     }
-    console.log
-    //&rarr; ${}g<br>
-    lista.innerHTML = 
-    `
-    Açucar &rarr; ${JSON.stringify(ingredietes.Acucar)}g<br>
-    Agua &rarr;${JSON.stringify(ingredietes.Agua)}g<br>
-    Alho Poró &rarr; ${JSON.stringify((ingredietes.Alho_poro*1.33).toFixed(2))}g<br>
-    Aveia &rarr;${JSON.stringify(ingredietes.Aveia)}g<br>
-    Azeite &rarr;${JSON.stringify(ingredietes.Azeite)}g<br>
-    Bacon &rarr; ${JSON.stringify((ingredietes.Bacon*1.33).toFixed(2))}g<br>
-    Cebola &rarr;${JSON.stringify(ingredietes.Cebola)}g<br>
-    Creme de leite &rarr; ${JSON.stringify(ingredietes.Creme_de_leite)}g<br>
-    Espinafre &rarr;${JSON.stringify((ingredietes.Espinafre*1.26).toFixed(2))}g<br>
-    Farinha de Trigo &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo)}g<br>
-    Farinha de Trigo Integral &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo_Integral)}g<br>
-    Fermento de bolo &rarr; ${JSON.stringify(ingredietes.Fermento_bolo)}g<br>
-    Fermento de pão &rarr; ${JSON.stringify(ingredietes.Fermento_pao)}g<br>
-    Frango &rarr;${JSON.stringify((ingredietes.Frango*1.28).toFixed(2))}g<br>
-    Gotas de Chocolate &rarr; ${JSON.stringify(ingredietes.Gotas_de_chocolate)}g<br>
-    Laranja &rarr;${JSON.stringify(ingredietes.Laranja)}g<br>
-    Leite &rarr; ${JSON.stringify(ingredietes.Leite)}g<br>
-    Manteiga &rarr; ${JSON.stringify(ingredietes.Manteiga)}g<br>
-    Margarina &rarr; ${JSON.stringify(ingredietes.Margarina)}g<br>
-    Mussarela &rarr; ${JSON.stringify(ingredietes.Mussarela)}g<br>
-    Noz moscada &rarr; ${JSON.stringify(ingredietes.Noz_moscada)}g<br>
-    Óleo &rarr;${JSON.stringify(ingredietes.Oleo)}g<br>
-    Ovo &rarr; ${JSON.stringify((ingredietes.Ovo/54).toFixed(2))}unid<br>
-    Presunto &rarr; ${JSON.stringify(ingredietes.Presunto)}g<br>
-    Queijo parmessão &rarr; ${JSON.stringify(ingredietes.Queijo_parmessao)}g<br>
-    Ricota &rarr;${JSON.stringify(ingredietes.Ricota)}g<br>
-    Sal &rarr;${JSON.stringify(ingredietes.Sal)}g<br>
-    Salsa_e_Cebolinha &rarr;${JSON.stringify(ingredietes.Salsa_e_Cebolinha)}g<br>
-    `    
+    
+/*
+&rarr; ${}g<br>
+if (ingredietes. != 0) {
+        lista.innerHTML = ``
+}
+
+*/
+    lista.innerHTML = ''
+    if (ingredietes.Acucar != 0) {
+        lista.innerHTML += `Açucar &rarr; ${JSON.stringify(ingredietes.Acucar)}g<br>`
+    }
+    if (ingredietes.Agua != 0) {
+        lista.innerHTML += `Água &rarr; ${JSON.stringify(ingredietes.Agua)}g<br>`
+    }
+    if (ingredietes.Alho_poro != 0) {
+        lista.innerHTML += `Alho Poró &rarr; ${JSON.stringify(ingredietes.Alho_poro*1.33)}g<br>`
+    }
+    if (ingredietes.Aveia != 0) {
+        lista.innerHTML += `Aveia &rarr;${JSON.stringify(ingredietes.Aveia)}g<br>`
+    }
+    if (ingredietes.Azeite != 0) {
+        lista.innerHTML += `Azeite &rarr;${JSON.stringify(ingredietes.Azeite)}g<br>`
+    }
+    if (ingredietes.Bacon != 0) {
+        lista.innerHTML += `Bacon &rarr; ${JSON.stringify((ingredietes.Bacon*1.33).toFixed(2))}g<br>`
+    }
+    if (ingredietes.Cebola != 0) {
+        lista.innerHTML += `Cebola &rarr;${JSON.stringify(ingredietes.Cebola)}g<br>`
+    }
+    if (ingredietes.Creme_de_leite != 0) {
+        lista.innerHTML += `Creme de leite &rarr; ${JSON.stringify(ingredietes.Creme_de_leite)}g<br>`
+    }
+    if (ingredietes.Espinafre != 0) {
+        lista.innerHTML += `Espinafre &rarr;${JSON.stringify((ingredietes.Espinafre*1.26).toFixed(2))}g<br>`
+    }
+    if (ingredietes.Farinha_de_Trigo != 0) {
+        lista.innerHTML += `Farinha de Trigo &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo)}g<br>`
+    }
+    if (ingredietes.Farinha_de_Trigo_Integral != 0) {
+        lista.innerHTML += `Farinha de Trigo Integral &rarr;${JSON.stringify(ingredietes.Farinha_de_Trigo_Integral)}g<br>`
+    }
+    if (ingredietes.Fermento_bolo != 0) {
+        lista.innerHTML += `Fermento de bolo &rarr; ${JSON.stringify(ingredietes.Fermento_bolo)}g<br>`
+    }
+    if (ingredietes.Fermento_pao != 0) {
+        lista.innerHTML += `Fermento de pão &rarr; ${JSON.stringify(ingredietes.Fermento_pao)}g<br>`
+    }
+    if (ingredietes.Frango != 0) {
+        lista.innerHTML += `Frango &rarr;${JSON.stringify((ingredietes.Frango*1.28).toFixed(2))}g<br>`
+    }
+    if (ingredietes.Gotas_de_chocolate != 0) {
+        lista.innerHTML += `Gotas de Chocolate &rarr; ${JSON.stringify(ingredietes.Gotas_de_chocolate)}g<br>`
+    }
+    if (ingredietes.Laranja != 0) {
+        lista.innerHTML += `Laranja &rarr;${JSON.stringify(ingredietes.Laranja)}g<br>`
+    }
+    if (ingredietes.Leite != 0) {
+        lista.innerHTML += `Leite &rarr; ${JSON.stringify(ingredietes.Leite)}g<br>`
+    }
+    if (ingredietes.Manteiga != 0) {
+        lista.innerHTML += `Manteiga &rarr; ${JSON.stringify(ingredietes.Manteiga)}g<br>`
+    }
+    if (ingredietes.Margarina != 0) {
+        lista.innerHTML += `Margarina &rarr; ${JSON.stringify(ingredietes.Margarina)}g<br>`
+    }
+    if (ingredietes.Mussarela != 0) {
+        lista.innerHTML += `Mussarela &rarr; ${JSON.stringify(ingredietes.Mussarela)}g<br>`
+    }
+    if (ingredietes.Noz_moscada != 0) {
+        lista.innerHTML += `Noz moscada &rarr; ${JSON.stringify(ingredietes.Noz_moscada)}g<br>`
+    }
+    if (ingredietes.Oleo != 0) {
+        lista.innerHTML += `Óleo &rarr;${JSON.stringify(ingredietes.Oleo)}g<br>`
+    }
+    if (ingredietes.Ovo != 0) {
+        lista.innerHTML += `Ovo &rarr; ${JSON.stringify((ingredietes.Ovo/57).toFixed(2))}unid<br>`
+    }
+    if (ingredietes.Presunto != 0) {
+        lista.innerHTML += `Presunto &rarr; ${JSON.stringify(ingredietes.Presunto)}g<br>`
+    }
+    if (ingredietes.Queijo_parmessao != 0) {
+        lista.innerHTML += `Queijo parmessão &rarr; ${JSON.stringify(ingredietes.Queijo_parmessao)}g<br>`
+    }
+    if (ingredietes.Ricota != 0) {
+        lista.innerHTML += `Ricota &rarr;${JSON.stringify(ingredietes.Ricota)}g<br>`
+    }
+    if (ingredietes.Sal != 0) {
+        lista.innerHTML += `Sal &rarr;${JSON.stringify(ingredietes.Sal)}g<br>`
+    }
+    if (ingredietes.Salsa_e_Cebolinha != 0) {
+        lista.innerHTML += `Salsa_e_Cebolinha &rarr;${JSON.stringify(ingredietes.Salsa_e_Cebolinha)}g<br>`
+    }
+
+
+      
     
 
 
