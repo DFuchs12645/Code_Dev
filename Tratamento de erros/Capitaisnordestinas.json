@@ -1,0 +1,40 @@
+{
+    "Capitais":[
+        {
+            "Cidade":"Natal",
+            "Estado":"(RN)"
+        },
+        {
+            "Cidade":"Salvador",
+            "Estado":"(BA)"
+        },
+        {
+            "Cidade":"Maceió",
+            "Estado":"(AL)"
+        },
+        {
+            "Cidade":"Fortaleza",
+            "Estado":"(CE)"
+        },
+        {
+            "Cidade":"Recife",
+            "Estado":"(PE)"
+        },
+        {
+            "Cidade":"Teresina",
+            "Estado":"(PI)"
+        },
+        {
+            "Cidade":"São Luís",
+            "Estado":"(MA)"
+        },
+        {
+            "Cidade":"João Pessoa",
+            "Estado":"(PB)"
+        },
+        {
+            "Cidade":"Aracaju",
+            "Estado":"(SE)"
+        } 
+    ]
+}

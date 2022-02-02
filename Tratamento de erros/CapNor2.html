@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Atividade 3: Lojas e Capitais</p>
+		<form>
+			Nome da loja: <input id="loja" type="text"><br>
+			Cidade: <input id="cidade" type="text"><br>
+			Valor mensal de venda: <input id="valor" type="text"><br><br>
+			<input id="btenv" type="button" value="Enviar" onclick="trataForm()">
+			<input id="btref" type="button" value="Recarregar" onclick="location.reload()" 
+					style="display:none">
+		</form>
+		<p id="resp"></p>
+        <script>
+            var CapNor = '{"capitais":[{"cidade":"Natal"},{"cidade":"Salvador"},' +
+										'{"cidade":"Maceió"},{"cidade":"Fortaleza"},' +
+										'{"cidade":"Recife"},{"cidade":"Teresina"},' +
+										'{"cidade":"São Luiz"},{"cidade":"João Pessoa"},' +
+										'{"cidade":"Aracaju"}]}';
+
+            try {
+                document.getElementById("resp").innerHTML = "";
+                var CapNorobj = JSON.parse(CapNor)
+                var lj = document.getElementById("loja").value;
+				var cd = document.getElementById("cidade").value;
+				var vl = document.getElementById("valor").value;
+
+                if(!lj | !cd | !vl)throw 'blank'
+
+                if(CidadePermitida(cd,CapNorobj)==false)throw 'Cidade não permitida'
+
+            } catch (e) {
+                
+            }
+        </script>
+</body>
+</html>
