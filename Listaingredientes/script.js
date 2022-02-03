@@ -1,5 +1,7 @@
+//import * as Cookies from Listaingredientes/jscookie.js;
 function caling(){
     var lista = document.getElementById('lista')
+    var tabela = document.getElementsByClassName('produto')
 
     var pf = Number(document.getElementById('pf').value)
     var pe = Number(document.getElementById('pe').value)
@@ -8,6 +10,7 @@ function caling(){
     var bl = Number(document.getElementById('bl').value)
     var rc = Number(document.getElementById('rc').value)
     var pi = Number(document.getElementById('pi').value)
+    
 
     /* pastel
     Massa 120
@@ -157,8 +160,9 @@ function caling(){
     Farinha_de_Trigo: 70,
     Acucar: 25,
     Agua: 285
-    }
-    
+    } 
+
+
     var ingredietes = {
         Acucar:(bololaranja.Acucar*bl+paointegral.Acucar*pi+roscachocolate.Acucar*rc).toFixed(2),
         Agua: (mpastel.Agua*pf+mpastel.Agua*pe+paointegral.Agua*pi).toFixed(2),
@@ -191,9 +195,9 @@ function caling(){
     }
     
 /*
-&rarr; ${}g<br>
+
 if (ingredietes. != 0) {
-        lista.innerHTML = ``
+        lista.innerHTML = `     &rarr; ${}g<br>`
 }
 
 */
@@ -283,7 +287,7 @@ if (ingredietes. != 0) {
         lista.innerHTML += `Salsa_e_Cebolinha &rarr;${JSON.stringify(ingredietes.Salsa_e_Cebolinha)}g<br>`
     }
 
-
+    
       
     
 
