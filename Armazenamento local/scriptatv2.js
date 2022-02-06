@@ -17,8 +17,6 @@ if(localStorage.getItem('nome')){
 document.getElementById('sdcuser').innerHTML = `Olá, ${user}.`
 document.getElementById('nvisitas').innerHTML = msgcont
 
-
-
 function esquecer(){
     localStorage.clear()
     window.location.reload()
