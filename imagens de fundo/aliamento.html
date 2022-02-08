@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+        }
+        .hbox {
+            position: relative;
+            background: purple url('img/target001.png') center center no-repeat;
+            background-size: contain;
+            padding: 10px;
+            height: 500px;
+            width: 750px;
+
+        }
+        .lbox {
+            position: absolute;
+            background: yellow url('img/target001.png') center center no-repeat;
+            background-size: 100%;
+            height: 150px;
+            width: 300px;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section class="hbox">
+        <div class="lbox" >
+
+        </div>
+    </section>
+</body>
+</html>
