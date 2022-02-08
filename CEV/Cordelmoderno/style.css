@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    height: 100%;
+}
+header{
+    position: relative;
+    background: black;
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    height: 25vh;
+}
+
+h1{
+    position: absolute;
+    font-size: 2.5em;
+    font-family: 'Courgette';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+header p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 250%);
+
+}
+main{
+    font-family: 'Courgette';
+    
+}
+div#natureza{
+    background: green url('img/Natureza.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+div#livro{
+    background: green url('img/Livros.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+.trecho{
+    margin: 8px 0px 0px 0px;
+}
+.paragrafo{
+    padding: 10px 0px 10px 10px;
+    height: 200px;
+}
+div#p2{
+    background-color: rgba(0, 0, 0, 0.425);  
+    color: white;
+    width: 200px;
+    padding: 0px 5px 5px 5px;
+}
+div#p5{
+    background-color: rgba(0, 0, 0, 0.425);  
+    color: white;
+    width: 200px;  
+    padding: 0px 5px 5px 5px;          
+}
+footer{
+    background: black;
+    background-size: 100%;
+    color: white;
+    
+    padding: 4px 0px 0px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none 
+    
+}
