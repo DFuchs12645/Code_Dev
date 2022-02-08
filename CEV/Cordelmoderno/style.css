@@ -75,5 +75,8 @@ footer{
 a{
     color: white;
     text-decoration: none 
-    
+
+}
+a:hover{
+    color: rgb(175, 175, 175);
 }
