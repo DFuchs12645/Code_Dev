@@ -39,17 +39,20 @@ main{
 div#natureza{
     background: green url('img/Natureza.jpg') center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
 }
 div#livro{
     background: green url('img/Livros.jpg') center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
 }
 .trecho{
     margin: 8px 0px 0px 0px;
 }
 .paragrafo{
-    padding: 10px 0px 10px 10px;
+    padding: 30px 0px 20px 10px;
     height: 200px;
+    
 }
 div#p2{
     background-color: rgba(0, 0, 0, 0.425);  
