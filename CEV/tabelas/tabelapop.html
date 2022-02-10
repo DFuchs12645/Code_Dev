@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela da população brasileira</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background : rgb(150, 150, 150);
+        }
+        th{
+            border: 2px solid black;
+            background : rgb(150, 150, 150);
+        }td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body >
+    <table>
+        <thead>
+            <caption> População por estado </caption>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Sigla</th>
+                <th scope="col">População</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td class="id">1</td>
+                <td>São Paulo</td>
+                <td>SP</td>
+                <td id="num_1" class="num">46649132</td>
+                
+            </tr>
+            <tr>
+                <td class="id">2</td>
+                <td>Minas Gerais</td>
+                <td>MG</td>
+                <td id="num_2" class="num">21411923</td>
+                
+            </tr>
+            <tr>
+                <td class="id">3</td>
+                <td>Rio de Janeiro</td>
+                <td>RJ</td>
+                <td id="num_3" class="num">17463349</td>
+                
+            </tr>
+            <tr>
+                <td class="id">4</td>
+                <td>Bahia</td>
+                <td>BA</td>
+                <td id="num_4" class="num">14985284</td>
+                
+            </tr>
+            <tr>
+                <td class="id">5</td>
+                <td>Paraná</td>
+                <td>PR</td>
+                <td id="num_5" class="num">11597484</td>
+                
+            </tr>
+            <tr>
+                <td class="id">6</td>
+                <td>Rio Grande do Sul</td>
+                <td>RS</td>
+                <td id="num_6" class="num">11466 630</td>
+                
+            </tr>
+            <tr>
+                <td class="id">7</td>
+                <td>Pernambuco</td>
+                <td>PE</td>
+                <td id="num_7" class="num">9674793</td>
+                
+            </tr>
+            <tr>
+                <td class="id">8</td>
+                <td>Ceará</td>
+                <td>CE</td>
+                <td id="num_8" class="num">9240580</td>
+                
+            </tr>
+            <tr>
+                <td class="id">9</td>
+                <td>Pará</td>
+                <td>PA</td>
+                <td id="num_9" class="num">8777124</td>
+                
+            </tr>
+            <tr>
+                <td class="id">10</td>
+                <td>Santa Catarina</td>
+                <td>SC</td>
+                <td id="num_10" class="num">7338473</td>
+                
+            </tr>
+            <tr>
+                <td class="id">11</td>
+                <td>Goiás</td>
+                <td>GO</td>
+                <td id="num_11" class="num">7206589</td>
+                
+            </tr>
+            <tr>
+                <td class="id">12</td>
+                <td>Maranhão</td>
+                <td>MA</td>
+                <td id="num_12" class="num">7153262</td>
+                
+            </tr>
+            <tr>
+                <td class="id">13</td>
+                <td>Amazonas</td>
+                <td>AM</td>
+                <td id="num_13" class="num">4269995</td>
+                
+            </tr>
+            <tr>
+                <td class="id">14</td>
+                <td>Espírito Santo</td>
+                <td>ES</td>
+                <td id="num_14" class="num">3514952</td>
+                
+            </tr>
+            <tr>
+                <td class="id">15</td>
+                <td>Paraíba</td>
+                <td>PB</td>
+                <td id="num_15" class="num">4059905</td>
+                
+            </tr>
+            <tr>
+                <td class="id">16</td>
+                <td>Mato Grosso</td>
+                <td>MT</td>
+                <td id="num_16" class="num">3567234</td>
+                
+            </tr>
+            <tr>
+                <td class="id">17</td>
+                <td>Rio Grande do Norte</td>
+                <td>RN</td>
+                <td id="num_17" class="num">3560903</td>
+                
+            </tr>
+            <tr>
+                <td class="id">18</td>
+                <td>Alagoas</td>
+                <td>AL</td>
+                <td id="num_18" class="num">3365351</td>
+                
+            </tr>
+            <tr>
+                <td class="id">19</td>
+                <td>Piauí</td>
+                <td>PI</td>
+                <td id="num_19" class="num">3289290</td>
+                
+            </tr>
+            <tr>
+                <td class="id">20</td>
+                <td>Distrito Federal</td>
+                <td>DF</td>
+                <td id="num_20" class="num">3094325</td>
+                
+            </tr>
+            <tr>
+                <td class="id">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td>MS</td>
+                <td id="num_21" class="num">2839188</td>
+                
+            </tr>
+            <tr>
+                <td class="id">22</td>
+                <td>Sergipe</td>
+                <td>SE</td>
+                <td id="num_22" class="num">2338474</td>
+                
+            </tr>
+            <tr>
+                <td class="id">23</td>
+                <td>Rondônia</td>
+                <td>RO</td>
+                <td id="num_23" class="num">1815278</td>
+                
+            </tr>
+            <tr>
+                <td class="id">24</td>
+                <td>Tocantins</td>
+                <td>TO</td>
+                <td id="num_24" class="num">1607363</td>
+                
+            </tr>
+            <tr>
+                <td class="id">25</td>
+                <td>Acre</td>
+                <td>AC</td>
+                <td id="num_25" class="num">906876</td>
+                
+            </tr>
+            <tr>
+                <td class="id">26</td>
+                <td>Amapá</td>
+                <td>AP</td>
+                <td id="num_26" class="num">877613</td>
+                
+            </tr>
+            <tr>
+                <td class="id">27</td>
+                <td>Roraima</td>
+                <td>RR</td>
+                <td id="num_27" class="num">652713</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="3">Total</th>
+            
+            <td id="popt"></td>
+            
+        </tfoot>
+    </table>
+    
+</body>
+</html>
