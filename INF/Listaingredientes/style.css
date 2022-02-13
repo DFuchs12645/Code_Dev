@@ -8,7 +8,7 @@
 }
 body{
     position: relative;
-    height: 180vh;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cordefundo);
     margin: 0em;
@@ -21,7 +21,7 @@ section.hbox{
     margin: auto;
     width: var(--largura);
     padding: 5px;
-    height: auto;
+    
 
 }
 h1{
@@ -39,7 +39,7 @@ div{
     padding: 5px;
 }
 footer{
-    position: absolute;
+    position: sticky;
     background: var(--corrodape);
     background-size: 100%;
     padding: 1px 0px 0px 4px;
@@ -48,7 +48,7 @@ footer{
     height: 4vh;
     bottom:0px;
     width: 100%;
-    transform: translate(0%, 500%);
+    
 }
 p {
     margin: 0%;
