@@ -15,15 +15,18 @@ body{
     padding-top: 5px;
 }
 section.hbox{
-    
+    position: relative;
     background-color: white;
     border-radius: 5px;
     margin: auto;
     width: var(--largura);
     padding: 5px;
+    margin-bottom: 1px;
     
 
 }
+
+
 h1{
     font-size: 1.5em;
     text-align: center;
@@ -39,7 +42,7 @@ div{
     padding: 5px;
 }
 footer{
-    position: sticky;
+    position: static;
     background: var(--corrodape);
     background-size: 100%;
     padding: 1px 0px 0px 4px;
@@ -49,6 +52,7 @@ footer{
     bottom:-1px;
     width: 100%;
     margin-top: 5px;
+     
 }
 p {
     margin: 0%;
