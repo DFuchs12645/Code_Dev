@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="import" href="excluircookie.html">
 </head>
 <body>
     <div id="dados">
@@ -13,14 +14,14 @@
     <button onclick="imp()">Imprimir</button>
     <script src="jsPDF.js"></script> 
     <script>
+        var doc = new jsPDF()
         function imp(){
         //import * as doc from "Testes/jsPDF.js"
-        var doc = new jsPDF()
-            doc.text(20, 20, 'Hello world!')
+        
+            doc.text(20, 20, 'oi!')
             doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.')
             doc.addPage()
             doc.text(20, 20, 'Do you like that?')
-            }
     </script>
 </body>
 </html>

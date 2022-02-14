@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display fotos</title>
+</head>
+<body>
+    <div id="fotos">
+        <img src="foto/1.jpg" alt="">
+    </div>
+    <button id="anterior" onclick="anterior()">anterior</button>
+    <button id="proximo" onclick="proximo()">proximo</button>
+    
+</body>
+<script>
+    var fotos = document.getElementById("fotos")
+    
+    var i = 1
+    
+    function anterior() {
+        i--
+        imp(i)
+    }
+    function proximo() {
+        i++
+        imp(i)  
+    }
+    function imp(i){
+        if (i == 1) {
+            document.getElementById("anterior").disabled = true;
+            document.getElementById("proximo").disabled = false;
+        }
+        if (i>=1 && i<=4) {
+            document.getElementById("anterior").disabled = false;
+            document.getElementById("proximo").disabled = false;
+        }
+        if (i == 4) {
+            document.getElementById("proximo").disabled = true;
+            document.getElementById("anterior").disabled = false;
+        }
+
+        fotos.innerHTML = `<img src="foto/${i}.jpg" alt="">`
+        
+        
+    }
+</script>
+</html>
