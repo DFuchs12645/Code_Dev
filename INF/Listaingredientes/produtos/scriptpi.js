@@ -19,6 +19,10 @@ function imprimir(i){
     lista.innerHTML += 'Água = ' + (285 * i).toFixed(2) + 'g<br>'  
 }
      
+function calcular(){
+    i = Number(document.getElementById('qtd').value);
+    imprimir(i)
+}
 function menos(){
     i--
     imprimir(i)

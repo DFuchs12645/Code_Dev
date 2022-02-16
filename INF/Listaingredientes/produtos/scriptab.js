@@ -22,7 +22,10 @@ function imprimir(i){
     lista.innerHTML += 'Alho poró = ' + ((7 * i)*1.33).toFixed(2) + 'g<br>'
     lista.innerHTML += 'Bacon = ' + ((7 * i)*1.33).toFixed(2) + 'g'   
 }
-
+function calcular(){
+    i = Number(document.getElementById('qtd').value);
+    imprimir(i)
+}
 function menos(){
     i--
     imprimir(i)

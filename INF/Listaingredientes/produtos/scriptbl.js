@@ -16,6 +16,10 @@ function imprimir(i){
     lista.innerHTML += 'Fermento bolo = ' + (15 * i).toFixed(2) + 'g<br>'   
 }
         
+function calcular(){
+    i = Number(document.getElementById('qtd').value);
+    imprimir(i)
+}
 function menos(){
     i--
     imprimir(i)
