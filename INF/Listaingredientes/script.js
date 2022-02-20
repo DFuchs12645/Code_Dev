@@ -315,3 +315,7 @@ function imprimir(){
         lista.innerHTML += `Salsa_e_Cebolinha &rarr;${localStorage.getItem('salsacebolinha')}g<br>`
     }
 }   
+function limpar(){
+    localStorage.clear()
+    lista.innerHTML = ''
+}
