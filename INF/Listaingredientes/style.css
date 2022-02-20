@@ -66,13 +66,14 @@ a:hover{
     color: rgb(53, 53, 53);
 }
 .btb{
+    margin-top: 5px;
     width: 30px;
     height: 30px;
     align-items: center;
 }
 #lbox{
-    width: var(--largura)+15px;
-    background-color:aqua;
+    width: var(--largura)-5px;
+    
 }
 div#lista{
     height: auto;
