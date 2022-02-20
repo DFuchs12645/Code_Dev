@@ -72,7 +72,7 @@ a:hover{
 }
 #lbox{
     width: var(--largura)+15px;
-    
+    background-color:aqua;
 }
 div#lista{
     height: auto;
