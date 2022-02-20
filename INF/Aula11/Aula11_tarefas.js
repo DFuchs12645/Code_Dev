@@ -2,7 +2,7 @@
 // Cria o banco de dados
 // --------------------------------------------------
 var bd = openDatabase("bdTarefas","1.0","Banco de dados de tarefas",2*1024*1024);
-
+console.log(Number(document.getElementById('prod').value))
 // --------------------------------------------------
 // Cria a tabela de objetos e cores no banco de dados>>>>>>>
 // --------------------------------------------------
@@ -15,8 +15,20 @@ bd.transaction( function(tr) {
 });
 exibir();
 
+function multiplicar() {
+    console.log(document.getElementById('prod').value)
+    var num = parseInt(document.getElementById('prod').value)
+    if (num == "" || num <= 0)  {
+        num = 1;
+    }
+
+    console.log(num)
+    return num
+}
+
 function exibir(){
     document.getElementById("conteudo").innerHTML="";
+    document.getElementById("resultado").innerHTML="";
 
     bd.transaction( function(tr) {
         var comandoSQL = 'SELECT rowid, descTrf FROM Tarefas;';
@@ -34,6 +46,7 @@ function exibir(){
                     "</div>";
                 };
         });
+           
     });
 }
 
