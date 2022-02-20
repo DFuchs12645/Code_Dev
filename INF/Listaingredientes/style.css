@@ -29,7 +29,7 @@ section.hbox{
     background-color:var(--cordefundo)
 }
 #btclear{
-    margin: auto;
+    margin-left: calc(150px - 48.906px);
 }
 h1{
     font-size: 1.5em;
