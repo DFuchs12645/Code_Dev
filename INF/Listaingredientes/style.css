@@ -71,7 +71,7 @@ a:hover{
     align-items: center;
 }
 #lbox{
-    width: var(--largura)-5px;
+    width: var(--largura)+15px;
     
 }
 div#lista{
