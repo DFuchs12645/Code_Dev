@@ -22,6 +22,7 @@ function calcular(){
 }
 function menos(){
     i--
+    if (i<=0) {i=1}
     imprimir(i)
 }
 function mais(){

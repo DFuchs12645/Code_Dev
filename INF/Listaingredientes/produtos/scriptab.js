@@ -2,7 +2,7 @@ let i = 1
 let lista  = document.getElementById('lbox')
 
 function imprimir(i){
-    if (i<=0) {i=1}
+    
     if (i==1) {
         unid.innerHTML = i + ' unidade'
     }else{
@@ -28,6 +28,7 @@ function calcular(){
 }
 function menos(){
     i--
+    if (i<=0) {i=1}
     imprimir(i)
 }
 function mais(){
