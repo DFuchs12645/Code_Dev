@@ -1,7 +1,7 @@
 //import * as Cookies from Listaingredientes/jscookie.js;
 var lista = document.getElementById('lista')
 var tabela = document.getElementsByClassName('produto')
-
+imprimir()
 function caling(){
 
     var pf = Number(document.getElementById('pf').value)
