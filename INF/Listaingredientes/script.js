@@ -257,8 +257,8 @@ function imprimir(){
     if (localStorage.getItem('espinafre') != null && localStorage.getItem('espinafre') != 0) {
         lista.innerHTML += `Espinafre &rarr;${localStorage.getItem('espinafre')}g<br>`
     }
-    if (localStorage.getItem('farinhadeTrigo') != null && localStorage.getItem('farinhadeTrigo') != 0) {
-        lista.innerHTML += `Farinha de Trigo &rarr;${localStorage.getItem('farinhadeTrigo')}g<br>`
+    if (localStorage.getItem('farinhadetrigo') != null && localStorage.getItem('farinhadeTrigo') != 0) {
+        lista.innerHTML += `Farinha de Trigo &rarr;${localStorage.getItem('farinhadetrigo')}g<br>`
     }
     if (localStorage.getItem('farinhadetrigoint') != null && localStorage.getItem('farinhadetrigoint') != 0) {
         lista.innerHTML += `Farinha de Trigo Integral &rarr;${localStorage.getItem('farinhadetrigoint')}g<br>`
