@@ -87,10 +87,10 @@ function caling(){
     }
     localStorage.setItem('acucar', ((bololaranja.Acucar*bl+paointegral.Acucar*pi+roscachocolate.Acucar*rc).toFixed(2)))
     localStorage.setItem('agua', ((mpastel.Agua*pf+mpastel.Agua*pe+paointegral.Agua*pi).toFixed(2)))
-    localStorage.setItem('alhoporo', (((alhobacon.Alho_poro*ab)*1.33).toFixed(2)))
+    localStorage.setItem('alhoporo', (((alhobacon.Alho_poro*ab)*1.49).toFixed(2)))
     localStorage.setItem('aveia', ((mpastel.Aveia*pe+mpastel.Aveia*pf+paointegral.Aveia*pi).toFixed(2)))
     localStorage.setItem('azeite', ((paointegral.Azeite*pi).toFixed(2)))
-    localStorage.setItem('bacon', (((alhobacon.Bacon*ab)*1.33).toFixed(2)))
+    localStorage.setItem('bacon', (((alhobacon.Bacon*ab)*1.49).toFixed(2)))
     localStorage.setItem('cebola', ((rfrango.Cebola*pf+respinafre.Cebola*pe).toFixed(2)))
     localStorage.setItem('cremedeleite', ((quiche.Creme_de_leite*ab+quiche.Creme_de_leite*pq).toFixed(2)))
     localStorage.setItem('espinafre', (((respinafre.Espinafre*pe)*1.26).toFixed(2)))               
