@@ -35,7 +35,7 @@ function caling(){
         Cheiro_verde:0.534
     }
     var quiche = {
-        Ovo: 14.8,
+        Ovo: 10.933,
         Margarina: 11,
         Oleo: 5,
         Farinha_de_Trigo: 30,
@@ -140,8 +140,8 @@ function caling(){
     */
     /*Quiche
     Massa 1unid
-    *Gema de ovo = 4g
-    Margarina = 11g
+    *Gema de ovo = 0,133g                                       30unid -> 7ovos 
+    Margarina = 11g                                         1unid  -> X
     oleo = 5g
     Farinha de trigo = 30g
     ovo = 108g--10,8g                            unid=57g
@@ -191,6 +191,10 @@ function caling(){
     ft = 70
     açucar 25
     agua 285
+    
+    1gema = 7.5
+    x     = 1
+    
     */
     
     
@@ -236,8 +240,8 @@ function imprimir(){
     if (localStorage.getItem('agua') != null && localStorage.getItem('agua') != 0) {
         lista.innerHTML += `Água &rarr; ${localStorage.getItem('agua')}g<br>`
     }
-    if (localStorage.getItem('Alho_poro') != null && localStorage.getItem('Alho_poro') != 0) {
-        lista.innerHTML += `Alho Poró &rarr; ${localStorage.getItem('Alho_poro')}g<br>`
+    if (localStorage.getItem('alhoporo') != null && localStorage.getItem('alhoporo') != 0) {
+        lista.innerHTML += `Alho Poró &rarr; ${localStorage.getItem('alhoporo')}g<br>`
     }
     if (localStorage.getItem('aveia') != null && localStorage.getItem('aveia') != 0) {
         lista.innerHTML += `Aveia &rarr;${localStorage.getItem('aveia')}g<br>`
