@@ -1,10 +1,12 @@
 
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     --largura: 300px;
     --cordefundo: rgb(223, 217, 217);
-    --corrodape: rgb(151, 146, 146);
+    --corup: #ffc800;
+    --fontname: 'Island Moments','Courgette', cursive;
 }
 body{
     position: relative;
@@ -12,8 +14,48 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cordefundo);
     margin: 0em;
-    padding-top: 5px;
+    
 }
+header{
+    position: relative;
+    width: 100vw;
+    height: 110px;
+    background-color: var(--corup);
+}
+header > div#logo{
+    background-color:white;
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+header > div#nomefornecedor{
+    
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    font-family: var(--fontname);
+    
+}
+
+
+header > div.menu{
+    padding: 4xp;
+    position: absolute;
+    top: 78%;
+    left: 97.8%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
 section.hbox{
     position: relative;
     background-color: white;
@@ -22,6 +64,7 @@ section.hbox{
     width: var(--largura);
     padding: 5px;
     margin-bottom: 1px;
+    margin-top: 5px;
     
 
 }
@@ -31,11 +74,7 @@ section.hbox{
 #btclear{
     margin-left: calc(150px - 48.906px);
 }
-h1{
-    font-size: 1.5em;
-    text-align: center;
-}
-div{
+div#lista, div.lbox2 {
     
     background-color: white;
     border-radius: 5px;
@@ -47,7 +86,7 @@ div{
 }
 footer{
     position: static;
-    background: var(--corrodape);
+    background: var(--corup);
     background-size: 100%;
     padding: 1px 0px 0px 4px;
     font-family: Arial, Helvetica, sans-serif;
