@@ -116,90 +116,7 @@ function caling(){
 
     lista.innerHTML = ''
     imprimir()
-    /* pastel
-    Massa 120
-    Aveia = 640g
-    Farinha de trigo = 1270,92g
-    Farinha de trigo integral = 1270,92g
-    oleo = 228,55g
-    sal = 20,29g
-    agua = 1377,72g
-
-    Recheio Espinafre 60
-    Ricota = 2242,80g
-    Cebola = 160,20g
-    oleo = 23,50g
-    *espinafre = 347,10g                    1393g>cozimento>1017g   26% de perda
-
-    Recheio Frango 60
-    Ricota = 2242,80g
-    Cebola = 160,20g
-    oleo = 23,50g
-    frango = 320,40g                        Perda de 28%
-    salsa e cebolinha = 32,04g
-    */
-    /*Quiche
-    Massa 1unid
-    *Gema de ovo = 0,133g                                       30unid -> 7ovos 
-    Margarina = 11g                                         1unid  -> X
-    oleo = 5g
-    Farinha de trigo = 30g
-    ovo = 108g--10,8g                            unid=57g
-    creme de leite = 100g--10g
-    queijo parmesão = 20g--0,2g
-    leite = 200g--20g
-    fermento bolo = 7g--0,7g
-    Sal = 3g--0,3g
-    Noz moscada = 0.4g--0,04g
-
-    Recheio Presunto e queijo 1unid
-    presunto = 13g
-    mussarela = 12g
-    ricota = 18g
-
-    Recheio alho poró e bacon 1unid
-    *alho poró = 7g                             ap=180g     33% de perda
-    *bacon = 7g                                 b=180g      33% de perda
-    ricota = 18g                                246g apos cozimento fazem 18unid
-    */
-    /*
-    bolo laranja
-    laranja = 229+229g
-    ovo = 189g
-    oleo = 150g
-    açucar = 244+81g
-    ft = 250g
-    fermento = 15g
     
-    Rosca de chocolate
-    ft = 600g
-    ovo = 114
-    leite = 240g
-    fermento = 10g
-    açucar = 60g 
-    gotas de chocolate = 300g
-    manteiga = 50g
-    oleo = 108g
-
-    Pão integral
-    ovo = 57g
-    azeite = 27g
-    fermento = 10g
-    sal = 9g
-    fti = 286g
-    aveia = 27g
-    ft = 70
-    açucar 25
-    agua 285
-    
-    1gema = 7.5
-    x     = 1
-    
-    */
-    
-    
-
-   
     var ingredietes = {
         //Acucar:(bololaranja.Acucar*bl+paointegral.Acucar*pi+roscachocolate.Acucar*rc).toFixed(2),
         //Agua: (mpastel.Agua*pf+mpastel.Agua*pe+paointegral.Agua*pi).toFixed(2),
@@ -322,4 +239,5 @@ function imprimir(){
 function limpar(){
     localStorage.clear()
     lista.innerHTML = ''
+    window.location.reload()
 }
