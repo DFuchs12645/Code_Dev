@@ -4,15 +4,23 @@
     margin: 0px;
     padding: 0px;
     --largura: 300px;
+    /*
     --cordefundo: rgb(223, 217, 217);
+    */
+    --cordefundo: rgb(255, 208, 208);
     --corup: #ffc800;
     --fontname: 'Island Moments','Courgette', cursive;
+    --cor1:#F2A30F;
+    --cor2:#F2790F;
+    --cor3:#D9A273;
+    --cor4:#BF2011;
+    --cor5:#F2F2F2;
 }
 body{
     position: relative;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cordefundo);
+    background-color: var(--cor5);
     margin: 0em;
     
 }
@@ -20,7 +28,7 @@ header{
     position: relative;
     width: 100vw;
     height: 110px;
-    background-color: var(--corup);
+    background-color: var(--cor1);
 }
 header > div#logo{
     background-color:white;
@@ -65,16 +73,14 @@ section.hbox{
     padding: 5px;
     margin-bottom: 1px;
     margin-top: 5px;
-    
+    box-shadow: rgba(68, 68, 68, 0.534) 3px 3px 2px;
 
 }
-.lbox2{
-    background-color:var(--cordefundo)
-}
+
 #btclear{
     margin-left: calc(150px - 48.906px);
 }
-div#lista, div.lbox2 {
+div#lista {
     
     background-color: white;
     border-radius: 5px;
@@ -83,10 +89,11 @@ div#lista, div.lbox2 {
     margin-bottom: 5px;
     width: var(--largura);
     padding: 5px;
+    box-shadow: rgba(68, 68, 68, 0.534) 3px 3px 2px;
 }
 footer{
     position: static;
-    background: var(--corup);
+    background: var(--cor3);
     background-size: 100%;
     padding: 1px 0px 0px 4px;
     font-family: Arial, Helvetica, sans-serif;
@@ -122,4 +129,13 @@ div#lista{
     height: auto;
     /*height: 680px;*/
 }
-
+div#lbox2{
+    background-color:var(--cor5);
+    
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: var(--largura);
+    padding: 5px;
+}
